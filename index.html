@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kotlotek test</title>
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      touch-action: pan-y;
+      user-select: none;
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background-color: white;
+      font-family: 'Arial', serif;
+    }
+
+    .gl_div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      height: auto;
+      justify-content: center;
+      gap: 30px;
+      margin: auto;
+    }
+
+    .gl_set {
+      width: 250px;
+      height: auto;
+      margin-top: 30px;
+    }
+
+    .gl_div p {
+      color: black;
+      text-align: left;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: rgb(187, 0, 0);
+      width: 70%;
+      height: auto;
+      margin: auto;
+      transform: translateY(20px);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .nav a {
+      display: flex;
+      color: white;
+      font-size: 26px;
+      align-items: center;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .nav a:hover {
+      background-color: rgb(153, 0, 0);
+    }
+
+    .slide {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      z-index: 2;
+    }
+
+    .slide img {
+      border-radius: 7px;
+    }
+
+    .icons {
+      position: relative;
+      display: flex;
+      width: 70%;
+      gap: 20px;
+      height: auto;
+      flex-wrap: wrap;
+      margin: auto;
+      top: -130px;
+      z-index: 4;
+      justify-content: center;
+    }
+
+    .icon {
+      width: auto;
+      height: 208px;
+      margin: auto;
+      box-shadow: 0 0 20px rgb(0, 0, 0);
+      transition: all 0.3s ease;
+    }
+
+    .icon:hover {
+      scale: 1.08;
+    }
+
+    .icons img {
+      border-radius: 10px;
+    }
+
+    .fo_img {
+      position: relative;
+      top: -95px;
+      height: 70px;
+      width: 359px;
+      background-color: rgba(0, 0, 0, 0.63);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom: 5px solid rgb(187, 0, 0);
+    }
+
+    .fo_img h2 {
+      position: relative;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      top: 12px;
+      font-size: 20px;
+    }
+
+    .phone {
+      position: relative;
+      left: -35px;
+      bottom: 90px;
+    }
+
+    .logo {
+      display: flex;
+      position: relative;
+      z-index: 5;
+      justify-content: center;
+    }
+
+    .raz {
+      position: relative;
+      background-color: rgb(187, 0, 0);
+      width: 100px;
+      height: 7px;
+      margin: auto;
+      bottom: 70px;
+    }
+
+    .op {
+      width: 80%;
+      margin: auto;
+    }
+
+    .op h1 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      bottom: 80px;
+    }
+
+    .op p {
+      position: relative;
+      text-align: center;
+      bottom: 80px;
+    }
+
+    footer {
+      margin-top: 130px;
+    }
+
+    @media (max-width: 800px) {
+      .slide {
+        display: none;
+      }
+
+      .nav {
+        border-radius: 12px;
+      }
+
+      .icons {
+        top: 40px;
+      }
+
+      .gl_div {
+        gap: 0px;
+      }
+
+      .op {
+        position: relative;
+        top: 150px;
+      }
+
+      .raz {
+        bottom: -80px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo"><a onclick="location.href='./index.html'"><img src="./images/logo.png"></a></div>
+  <div class="gl_div">
+    <div class="gl_set">
+      <p><b>Промышленные котлы, котельное оборудование</b>
+        <br><br>Проектирование, производство, поставка, монтаж, наладка, сервис
+      </p>
+    </div>
+    <div class="gl_set">
+      <p><b>+7 (960) 965-8-777</b>
+        <br><br>E-mail: kotlotek@yandex.ru<br>
+        Звоните с 04:00 до 16:00 (МСК)
+      </p>
+      <img class="phone" src="./images/phone.png">
+    </div>
+    <div class="gl_set">
+      <p><b>Алтайский край, г. Бийск</b>
+        <br><br>ул. Трофимова, д. 7/1, оф. 212
+      </p>
+    </div>
+  </div>
+  <div class="nav">
+    <a onclick="location.href='info.html'">О компании</a> <a onclick="location.href='uslugi.html'">услуги</a>
+    <a onclick="location.href='prim.html'">примеры работ</a> <a onclick="location.href='docum.html'">документы</a> <a onclick="location.href='cont.html'">контакты</a>
+  </div>
+  <div class="slide"><img src="./images/slide-2.jpg"></div>
+  <div class="icons">
+    <div class="icon">
+      <img src="./images/icon-1.jpg">
+      <div class="fo_img">
+        <h2>промышенные котлы и котельное оборудование</h2>
+      </div>
+    </div>
+
+    <div class="icon">
+      <img src="./images/icon2.jpg">
+      <div class="fo_img">
+        <h2>модульные котельные</h2>
+      </div>
+    </div>
+
+    <div class="icon">
+      <img src="./images/icon3.jpg">
+      <div class="fo_img">
+        <h2>услуги: проктирование, монтаж, накладка, сервис</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="raz"></div>
+  <div class="op">
+    <h1>О компании</h1>
+    <p>
+      Компания ООО «КОТЛОТЭК» - группа компаний Тепло-Энергетического Комплекса, которая занимается производством котлов
+      и котельно-вспомогательного оборудования для малой и средней энергетики. Осуществляем услуги по проектированию,
+      монтажу, пуско-наладочным работам, строительству котельных “под ключ”.
+      <br><br>
+      В нашей компании, сформировался костяк высоко-квалифицированных специалистов, имеющий в среднем 20 летний опыт
+      научной и производственной работы в данной сфере. Организовано производство котлов и энергозапчастей к котлам
+      Бийского котельного завода, Кусинского котельного завода и Дорогобужского котельного завода.
+      <br><br>
+      Номенклатура нашей продукции включает полный перечень оборудования необходимого при реализации любых проектов в
+      теплоэнергетике.
+    </p>
+  </div>
+
+  <footer>
+    <div class="logo"><img src="./images/logo.png"></div>
+  </footer>
+
+</body>
+
+</html>
